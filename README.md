@@ -12,4 +12,4 @@ Now that we have created the initial files for the cube, we execute the Equation
 './a.out'
 
 And visualize the simulation:
-'xmakemol -f fort.11'
+`xmakemol -f fort.11`
