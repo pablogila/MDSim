@@ -31,7 +31,10 @@
 *.out
 *.app
 
-# Files
+# Simulation files
+*.xyz
+*.txt
+*.dat
 fort.*
 *.1
 *.2
