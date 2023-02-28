@@ -68,7 +68,7 @@ real(kind=dp) :: Epot , Ek, Etot						        ! Energy values
 real(kind=dp), parameter :: dT = 0.00025_dp			    		! Time discretization
 real(kind=dp), parameter :: d_zero = 1.38_dp					! L-J Potential minimum
 real(kind=dp), parameter :: sigma = d_zero * 0.5_dp **(1 / 6)	! L-J potential sigma
-integer, parameter :: n_step = 10000							! Time steps for the Eq. solver
+integer, parameter :: n_step = 40000							! Time steps for the Eq. solver
 integer, parameter :: eps = 1.0_dp
 
 
@@ -143,7 +143,7 @@ do k=1, n_step
   print*, " 25 %    This seems to be working..."
  else if (k == n_step/2) then
   print*, " 50 %    We are already half the way!!"
- else if (k == n_step * (3/2)) then
+ else if (k == (n_step * (3/2))) then
   print*, " 75 %    Quick! FINISH YOUR COFFE!!!"
  end if 
  ! Compute the forces for every i atom.
