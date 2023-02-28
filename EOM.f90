@@ -68,7 +68,7 @@ real(kind=dp) :: Epot , Ek, Etot						        ! Energy values
 real(kind=dp), parameter :: dT = 0.00025_dp			    		! Time discretization
 real(kind=dp), parameter :: d_zero = 1.38_dp					! L-J Potential minimum
 real(kind=dp), parameter :: sigma = d_zero * 0.5_dp **(1 / 6)	! L-J potential sigma
-integer, parameter :: n_step = 2000								! Time steps for the Eq. solver
+integer, parameter :: n_step = 10000							! Time steps for the Eq. solver
 integer, parameter :: eps = 1.0_dp
 
 
@@ -148,6 +148,12 @@ do k=1, n_step
  end if 
  ! Compute the forces for every i atom.
  Epot = 0.0_dp
+ ! Remember to reset the forces each loop:
+ do i=1, N
+  Fx(i) = 0.0_dp
+  Fy(i) = 0.0_dp
+  Fz(i) = 0.0_dp
+ end do
  do i=1, N-1
   do j=i+1, N
   xval = Xhl(i) - Xhl(j)

@@ -12,3 +12,8 @@ Now that we have created the initial files for the cube, we execute the Equation
 
 And visualize the simulation:
 * `xmakemol -f fort.11`
+
+
+To plot kinetic energies:
+* `gnuplot`
+* `> plot "fort.10" u 2:3 w l, "fort.10" u 2:4 w l, "fort.10" u 2:5 w l`

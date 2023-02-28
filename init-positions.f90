@@ -296,6 +296,7 @@ end do
 
 ! Total kinetic energy-------------------------------------------------------------
 Ek = sum(T)
+print*, " "
 print*, "Total kinetic energy of the system: ", Ek
 print*, " "
 
