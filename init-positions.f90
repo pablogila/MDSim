@@ -201,7 +201,6 @@ do i=1, Nx
 end do
 print*, " "
 print*, "File for visualazing the cube in xmakemol has been generated: fort.3"
-print*, "--------------------------------------------------------------------"
 print*, " "
 
 
@@ -224,7 +223,6 @@ do i=1, Nx
 end do
 close(unit=4)
 print*, "File with all the positions of the system has been generated: fort.4"
-print*, "--------------------------------------------------------------------"
 print*, " "
 
 
@@ -234,7 +232,6 @@ do i=1, N
 end do
 close(unit=9)
 print*, "File with all the velocities of the system has been generated: fort.9"
-print*, "--------------------------------------------------------------------"
 print*, " "
 
 
@@ -281,7 +278,6 @@ do j=1, nhis
 end do
 close(unit=7)
 print*, "File with the histogram of velocities has been generated: fort.7"
-print*, "--------------------------------------------------------------------"
 print*, " "
 
 
@@ -301,7 +297,6 @@ end do
 ! Total kinetic energy-------------------------------------------------------------
 Ek = sum(T)
 print*, "Total kinetic energy of the system: ", Ek
-print*, "--------------------------------------------------------------------"
 print*, " "
 
 
@@ -327,7 +322,6 @@ do i=1, N
  end do
 end do
 print*, "Total potential (Lennard-Jones) energy of the system: ", Epot
-print*, "--------------------------------------------------------------------"
 print*, " "
 
 
@@ -361,7 +355,6 @@ do j=1, nhis
 end do
 close(unit=8)
 print*, "File with the histogram of positions has been generated: fort.8"
-print*, "--------------------------------------------------------------------"
 print*, " "
 
 deallocate(X)

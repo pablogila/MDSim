@@ -122,7 +122,6 @@ end do
 close(unit=9)
 print*, " "
 print*, "Initial positions and velocities have been readed succesfully"
-print*, "============================================================="
 print*, " "
 
 
@@ -136,16 +135,16 @@ end do
 
 ! Solve the EOM----------------------------------------
 print*, "Solving the Equations Of Motion. You can take a break for a coffe..."
-print*, "===================================================================="
+print*, "--------------------------------------------------------------------"
 print*, " "
-print*, "  0%. hmmmmm... coffe..."
+print*, "  0 %    Hmmmmm... coffe..."
 do k=1, n_step
  if (k == n_step/4) then
-  print*, " 25%. Seems to be working..."
+  print*, " 25 %    This seems to be working..."
  else if (k == n_step/2) then
-  print*, " 50%. We are already half the way!!"
+  print*, " 50 %    We are already half the way!!"
  else if (k == n_step * (3/2)) then
-  print*, " 75%. Quick! FINISH YOUR COFFE!!!"
+  print*, " 75 %    Quick! FINISH YOUR COFFE!!!"
  end if 
  ! Compute the forces for every i atom.
  Epot = 0.0_dp
@@ -206,17 +205,15 @@ end do
 
 print*, "100%. EOM calculation FINISHED! yayyy"
 print*, " "
+print*, "--------------------------------------------------------------------"
+print*, " "
 print*, "Updated energies at each time step in: fort.10"
-print*, "=============================================="
 print*, " "
 print*, "Updated X, Y and Z positions at each time step in: fort.11"
-print*, "=========================================================="
 print*, " "
 print*, "Total simulation time steps: ", n_step
-print*, "======================================"
 print*, " "
 print*, "Total simulation time: ", n_step*dT, "s"
-print*, "======================================="
 print*, " "
 
 close(unit=10)
