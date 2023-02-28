@@ -8,11 +8,11 @@ The program MDS_init.f90 generates the initial positions for a 3D cube of atoms,
 Compile the program and execute as follows:
 
 * First, we assign the initial positions, creataing the initial files for the cube\
-`gfortran tipos.f90 init-positions.f90`\
+`gfortran tipos.f90 MDS_init.f90`\
 `./a.out`
 
 * Next we execute the Equations Of Motion\
-`gfortran tipos.f90 EOM.f90`\
+`gfortran tipos.f90 MDS_EOM.f90`\
 `./a.out`
 
 
@@ -29,7 +29,7 @@ Compile the program and execute as follows:
 `gnuplot`\
 `> plot 'fort.8' u 1:2 w l`
 
-* Plot the kinetic energies\
+* Plot the kinetic, potential and total energies\
 `gnuplot`\
 `> plot "fort.10" u 2:3 w l, "fort.10" u 2:4 w l, "fort.10" u 2:5 w l`
 
