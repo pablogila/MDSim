@@ -32,8 +32,8 @@
 *.app
 
 # Files in the output folder
-OUT/*
-!OUT/
+/OUT/*
+!/OUT/
 #!OUT/nice_energies_example.png
 
 # Cleaning file
