@@ -2,10 +2,11 @@
 
 The program MDS_init.f90 generates the initial positions for a 3D cube of atoms, and MDS_EOM.f90 computes the Equations Of Motion of said cube via Verlet algorithm, taking Lennard-Jones interactions into account.
 
-Download the last version from\
+Download the last version from:\
 https://github.com/pablogila/Molecular_Dynamics_Sim
 
-As the outputs can be very large, it is recommended to clean them with RepoCleaner after saving the relevant data\
+
+The OUT folder is for you to manually save any relevant data; since outputs can be too large, it is recommended to clean the remaining ones with RepoCleaner after saving the relevant data:\
 https://github.com/pablogila/RepoCleaner
 
 
