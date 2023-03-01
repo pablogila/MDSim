@@ -31,9 +31,8 @@
 *.out
 *.app
 
-# Files in the output folder
+# Files in an output folder (optional) - INCOMPATIBLE WITH CLEAN.py
 /OUT/*
-!/OUT/nice_energies_example.png
 
 # Cleaning file
 CLEAN.py
