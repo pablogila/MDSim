@@ -33,8 +33,7 @@
 
 # Files in the output folder
 /OUT/*
-!/OUT/
-#!OUT/nice_energies_example.png
+!OUT/nice_energies_example.png
 
 # Cleaning file
 CLEAN.py
