@@ -5,9 +5,6 @@ The program MDS_init.f90 generates the initial positions for a 3D cube of atoms,
 Download the last version from:\
 https://github.com/pablogila/Molecular_Dynamics_Sim
 
-Since outputs can become too large, it is recommended to clean everything with RepoCleaner after saving the relevant data:\
-https://github.com/pablogila/RepoCleaner
-
 
 ## Instructions
 
