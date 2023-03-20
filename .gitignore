@@ -34,6 +34,10 @@
 # Files in an output folder (optional) - INCOMPATIBLE WITH CLEAN.py
 /OUT/*
 
+# Test folder
+/*TEST*
+/*test*
+
 # Cleaning file
 CLEAN.py
 
